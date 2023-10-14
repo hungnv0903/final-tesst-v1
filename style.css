@@ -1,0 +1,411 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.container {
+    width: 100%;
+}
+
+/* .navbar  */
+.navbar {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(15, 15, 66);
+    display: flex;
+    
+}
+.navbar .logo {
+    width: 50%;
+    height: 100%;
+    color: white;
+    text-align: center;
+}
+
+.logo h1 {
+    height: 100%;
+    width: 100%;
+    padding: 14px 0px;
+    text-transform: uppercase; 
+}
+.navbar .menu {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.navbar .menu .menu-item {
+    width: 30%;
+    height: 100%;
+    font-size: 23px;
+    padding: 20px 0px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0px 10px;
+}
+
+.navbar .menu-mobile {
+    display: none;
+}
+
+@media screen and (max-width:767px) {
+    .navbar {
+        width: 100%;
+        position: relative;
+    }
+
+    .navbar .menu {
+        display: none;
+    }
+
+    .navbar .menu-mobile {
+        display: block;
+        width: 100px;
+        height: 100%;
+        position: absolute;
+        right: 20px ; 
+        padding: 13px 0px;
+
+    }
+
+    .navbar .menu-mobile a{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        padding: 5px 10px;
+        background-color: rgb(8, 165, 105);
+        border-radius: 3px;
+        margin-top: 5px;
+        
+        
+    }
+    
+    .navbar .menu-mobile a h3 {
+        margin-right: 10px;
+    }
+
+    .navbar .menu-mobile a i {
+        margin-top: 3px;
+    }
+    
+}
+
+
+/* header  */
+
+.header {
+    width: 100%;
+    height:500px;
+    background: rgb(8, 165, 105);
+}
+
+.header .image {
+    width: 200px;
+    height: 300px;
+    margin: auto;
+    padding: 70px 10px 20px 10px; 
+    box-sizing: border-box;
+}
+.header img {
+    width: 100%;
+    height: 100%;
+}
+
+.header h1 {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.box-start {
+    width: 500px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 20px 0px;
+}
+
+.box-start hr {
+    width: 200px;
+    height: 1px;
+}
+.header p {
+    text-align: center;
+    color: white;
+}
+
+
+/* .portfolio  */
+
+.portfolio {
+    width: 100%;
+    height: auto;
+    padding: 50px 20px;
+
+}
+
+.portfolio h1 {
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.portfolio .box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0px 50px;
+}
+
+.box .box-portfolio {
+    width: 30%;
+    height: 250px;
+    margin: 40px 0px;
+
+}
+
+.box .box-portfolio img {
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
+
+@media screen and (max-width:767px) {
+    .portfolio {
+        width: 100%;
+        height: auto;
+    }
+    .box {
+        display: block;
+        width: 100%;
+    }
+    .box .box-portfolio {
+        width: 100%;
+        height: 400px;
+    }
+}
+
+
+/* .about  */
+
+.about {
+    width: 100%;
+    height: 500px;
+    background-color: #08A569;
+    padding: 50px 20px;
+}
+
+.about h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+}
+
+.content {
+    width: 600px;
+    height: auto;
+    margin: auto;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+
+.content-left , .content-right {
+    width: 50%;
+    padding: 0px 15px;
+    color: white;
+}
+
+.content-left , .content-right p {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.button {
+    width: 250px;
+    height: 100px;
+    padding-top: 35px;
+    margin: auto;
+}
+
+i {
+    margin-right: 10px;
+}
+button {
+    background-color: #08A569;
+    display: block;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    margin: auto;
+    border: 1px solid white;
+    color: white;
+}
+
+@media screen and (max-width : 767px) {
+    .about {
+        width: 100%;
+        height: auto;
+    }
+
+    .about .content {
+        display: block;
+        width: 100%;
+    }
+
+    .content-left , .content-right {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+
+/* .contact-me  */
+
+.contact-me {
+    width: 100%;
+    height: 500px;
+    padding: 50px 20px;
+}
+
+.contact-me h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contact-me .form {
+    margin: auto;
+    padding: 20px;
+    width: 60%;
+    background-color: white;
+}
+
+input {
+    width: 100%;
+    height: 40px;
+    border: none;
+}
+
+.contact-me .form label {
+    display: block;
+    margin-top: 15px;
+}
+
+.contact-me .form .submit {
+    width: 100%;
+}
+
+.form .submit button {
+    width: 70px;
+    line-height: 32px;
+    float: left;
+    border: none;
+    background-color: #08A569;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+/* footer  */
+
+.footer {
+    width: 100%;
+    height: 250px;
+    padding: 50px 20px;
+    background-color: rgb(20, 20, 82);
+}
+
+.footer .address {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;    
+}
+
+.address-left , .address-center , .address-right {
+    width: 30%;
+    height: auto;
+}
+
+.footer h2,p,i,a {
+    color: white;
+    text-align: center;
+}
+
+.footer .icon {
+    width: 200px;
+    height: 50px;
+    padding: 10px 0px ;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .icon i {
+    width: 16%;
+    height: 100%;
+    border: 1px solid white;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.footer .address-right a{
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    color: #08A569;
+}
+
+@media screen and (max-width:767px) {
+    .footer {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer .address {
+        width: 100%;
+        display: block;
+    }
+
+    .address-left , .address-center ,.address-right {
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+
+
+/* .coppyright  */
+
+.coppyright {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(3, 3, 24);
+
+}
+
+.coppyright span {
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 20px 0px;
+}
