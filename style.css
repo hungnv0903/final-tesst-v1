@@ -45,7 +45,7 @@ a {
 }
 
 .navbar .menu .menu-item {
-    width: 30%;
+    /* width: 30%; */
     height: 100%;
     font-size: 23px;
     padding: 20px 0px;
@@ -139,6 +139,10 @@ a {
 .box-start hr {
     width: 200px;
     height: 1px;
+}
+
+.box-start i {
+    line-height: 0px;
 }
 .header p {
     text-align: center;
